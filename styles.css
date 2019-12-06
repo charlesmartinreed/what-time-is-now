@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background: linear-gradient(270deg, rgb(216, 114, 114), goldenrod);
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.clock {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.clock .clock-number {
+  --rotation: 0;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+  transform: rotate(var(--rotation));
+}
+
+.clock .clock-number1 {
+  --rotation: 30deg;
+}
+
+.clock .clock-number2 {
+  --rotation: 60deg;
+}
+
+.clock .clock-number3 {
+  --rotation: 90deg;
+}
+
+.clock .clock-number4 {
+  --rotation: 120deg;
+}
+
+.clock .clock-number5 {
+  --rotation: 150deg;
+}
+.clock .clock-number6 {
+  --rotation: 180deg;
+}
+
+.clock .clock-number7 {
+  --rotation: 210deg;
+}
+
+.clock .clock-number8 {
+  --rotation: 240deg;
+}
+
+.clock .clock-number9 {
+  --rotation: 270deg;
+}
+
+.clock .clock-number10 {
+  --rotation: 300deg;
+}
+
+.clock .clock-number11 {
+  --rotation: 330deg;
+}
