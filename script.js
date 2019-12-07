@@ -2,10 +2,16 @@
 const secondHand = document.querySelector("[data-second-hand]");
 const minuteHand = document.querySelector("[data-minute-hand]");
 const hourHand = document.querySelector("[data-hour-hand]");
+
 const hours = document.querySelectorAll(".clock-number");
+const flavorText = document.querySelector(".daily-text");
 
 const setClock = () => {
   const currentDate = new Date();
+  const currentDay = currentDate.getDay();
+  console.log(currentDay);
+
+  flavorText.textContent = setDay(currentDay);
 
   const secondsRatio = currentDate.getSeconds() / 60;
   //   using seconds to make the minute/hour hand slide gradually
@@ -26,6 +32,27 @@ const setClock = () => {
   setRotation(secondHand, secondsRatio);
   setRotation(minuteHand, minutesRatio);
   setRotation(hourHand, hoursRatio);
+};
+
+const setDay = dayValue => {
+  switch (dayValue) {
+    case 0:
+      return "Sunday! Take a nice drive and try not to think about tomorrow!";
+    case 1:
+      return "Monday is where hope and aspiration goes to die.";
+    case 2:
+      return "In Latin America, Tuesday is known as the Day of the Dead (Inside)";
+    case 3:
+      return "They call it hump day, but I do my best under the cover of darkness, actually.";
+    case 4:
+      return "What even is the point of Thursday, exactly?";
+    case 5:
+      return "It's Friday and you ain't got shit to do... because your paycheck is already gone.";
+    case 6:
+      return "It's Saturday... time to shake off that hangover!";
+    default:
+      return "Oh god, another JavaScript clock...";
+  }
 };
 
 const setRotation = (element, rotationRatio) => {
