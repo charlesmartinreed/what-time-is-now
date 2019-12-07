@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
     <title>What Time Is Now?</title>
   </head>
   <body>
     <div class="clock">
       <!-- hands -->
-      <div class="clock-hand hand-hour"></div>
-      <div class="clock-hand hand-minute"></div>
-      <div class="clock-hand hand-second"></div>
+      <div class="clock-hand hand-hour" data-hour-hand></div>
+      <div class="clock-hand hand-minute" data-minute-hand></div>
+      <div class="clock-hand hand-second" data-second-hand></div>
 
       <!-- numbers -->
       <div class="clock-number clock-number1">1</div>
@@ -29,5 +28,8 @@
       <div class="clock-number clock-number11">11</div>
       <div class="clock-number clock-number12">12</div>
     </div>
+
+    <h1 class="timezone-display">Mountain Time</h1>
+    <script src="script.js"></script>
   </body>
 </html>
