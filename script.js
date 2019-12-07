@@ -9,7 +9,6 @@ const flavorText = document.querySelector(".daily-text");
 const setClock = () => {
   const currentDate = new Date();
   const currentDay = currentDate.getDay();
-  console.log(currentDay);
 
   flavorText.textContent = setDay(currentDay);
 
@@ -22,7 +21,11 @@ const setClock = () => {
 
   //   update the UI
   hours.forEach(hour => {
-    if (hour.textContent === String(currentDate.getHours() - 12)) {
+    // console.log(currentDate.getHours());
+    if (
+      hour.textContent === String(currentDate.getHours()) ||
+      hour.textContent === String(currentDate.getHours() - 12)
+    ) {
       //   hour.classList.add("currentHour");
       hour.style.setProperty("color", "midnightBlue");
       hour.style.setProperty("font-size", "2rem");
