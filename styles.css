@@ -22,6 +22,38 @@ body {
   align-items: center;
 }
 
+#Logo_FIXED {
+  /* margin-top: -0.6rem;
+  margin-right: -0.2rem;
+  width: 10%;
+  height: 10%; */
+}
+
+.social-media {
+  position: absolute;
+
+  top: 1.5%;
+  right: 2.5%;
+  display: flex;
+  flex-direction: row;
+  /* background: red; */
+}
+
+.social-media a {
+  text-decoration: none;
+  color: navajowhite;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.07rem;
+  /* text-transform: uppercase; */
+  padding-bottom: 0.3rem;
+  transition: border-bottom 0.2s ease-in;
+}
+
+.social-media a:hover {
+  border-bottom: 3px solid #00acee;
+}
+
 .clock {
   width: 400px;
   height: 400px;
@@ -70,7 +102,7 @@ body {
   width: 100%;
   height: 100%;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 400;
 
   opacity: 0.8;
   padding: 0.5rem;
@@ -83,7 +115,7 @@ body {
 .clock .clock-number6,
 .clock .clock-number9,
 .clock .clock-number12 {
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .clock .clock-number1 {

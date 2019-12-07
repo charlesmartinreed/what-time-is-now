@@ -26,6 +26,9 @@ const setClock = () => {
       //   hour.classList.add("currentHour");
       hour.style.setProperty("color", "midnightBlue");
       hour.style.setProperty("font-size", "2rem");
+    } else {
+      // fix glitch where previously updated hour didn't revert to normal styling
+      hour.style.setProperty("color", "black");
     }
   });
 
