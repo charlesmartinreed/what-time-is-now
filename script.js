@@ -49,7 +49,7 @@ const setDay = dayValue => {
     case 2:
       return "In Latin America, Tuesday is known as the Day of the Dead (Inside)";
     case 3:
-      return "They call it hump day, but I do my best under the cover of darkness, actually.";
+      return "They call it hump day, but I do my best humping under the cover of darkness, actually.";
     case 4:
       return "What even is the point of Thursday, exactly?";
     case 5:

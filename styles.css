@@ -12,7 +12,8 @@ html {
 }
 
 body {
-  background: linear-gradient(270deg, rgb(216, 114, 114), goldenrod);
+  /* background: linear-gradient(65deg, rgb(64, 64, 64), rgb(8, 8, 8)); */
+  background: linear-gradient(to right, #232526, #414345);
   height: 100vh;
   width: 100vw;
 
@@ -34,7 +35,7 @@ body {
 
 .social-media a {
   text-decoration: none;
-  color: navajowhite;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 1.1rem;
   font-weight: 500;
   letter-spacing: 0.07rem;
@@ -83,8 +84,8 @@ body {
   font-weight: 200;
   letter-spacing: 0.05rem;
   line-height: 2.1rem;
-  color: black;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
   /* text-transform: uppercase; */
 }
 
